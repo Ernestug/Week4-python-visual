@@ -24,13 +24,13 @@ app.layout = html.Div(children=[ html.H1('Flight Delay Time Statistics', style={
                                 html.Br(),
                                 html.Br(), 
                                 html.Div([
-                                        html.Div(dcc.Graph(id='carier-plot')),
-                                        html.Div(dcc.Graph('id=weather-plot'))
+                                        html.Div(dcc.Graph(id='carrier-plot')),
+                                        html.Div(dcc.Graph(id='weather-plot'))
                                 ], style={'display': 'flex'}),
 
                                 html.Div([
                                         html.Div(dcc.Graph(id='nas-plot')),
-                                        html.Div(dcc.Graph('security-plot'))
+                                        html.Div(dcc.Graph(id='security-plot'))
                                 ], style={'display': 'flex'}),
 
                                 html.Div(dcc.Graph(id='late-plot'), style={'width':'65%'})
